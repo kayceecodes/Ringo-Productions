@@ -1,0 +1,20 @@
+nav {
+    font-weight:bold;
+
+}
+.hero-img-container {
+    background-image: url('../assets/images/DSC06077.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 60vh;
+}
+
+.background {
+    background-color: #00000060;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
