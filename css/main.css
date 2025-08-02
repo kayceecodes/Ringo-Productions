@@ -1,13 +1,12 @@
 nav {
     font-weight:bold;
-
 }
 .hero-img-container {
+    position: relative;
     background-image: url('../assets/images/DSC06077.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 60vh;
 }
 
 .background {
