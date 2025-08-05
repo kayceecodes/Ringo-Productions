@@ -1,24 +1,14 @@
 {
   "name": "ringo-productions",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kayceecodes/Ringo-Productions.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/kayceecodes/Ringo-Productions/issues"
-  },
-  "homepage": "https://github.com/kayceecodes/Ringo-Productions#readme",
   "devDependencies": {
-    "tailwindcss": "^4.1.11"
+    "vite": "^7.0.4"
   }
 }
