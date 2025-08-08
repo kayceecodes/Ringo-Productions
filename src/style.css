@@ -11,11 +11,25 @@ nav {
     background-repeat: no-repeat;
 }
 
-.background {
-    background-color: #00000060;
+.hero-img-tint {
+    background-color: #0000000e;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+}
+
+.image-crop {
+  width: 200px;       /* desired visible width */
+  height: 240px;      /* desired visible height */
+  overflow: hidden;
+  position: relative;
+  
+}
+
+.image-crop img {
+  position: absolute;
+  top: 0px;         /* shift image upward */
+  left: 0px;        /* shift image to the left */
 }
