@@ -1,35 +1,84 @@
 @import "@fortawesome/fontawesome-free/css/all.css";
 
 nav {
-    font-weight:bold;
+  font-weight: bold;
+}
+strong {
+  font-family: "Russo One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+  word-spacing: 3px;
 }
 .hero-img-container {
-    position: relative;
-    background-image: url('../assets/images/DJ-Hero-Img-1.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  position: relative;
+  background-image: url("../assets/images/DJ-Hero-Img-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
+.hero-img-container::before {
+  content: "";
+  position: absolute;
+  inset: 0; 
+  background-color: rgba(0, 0, 0, 0.82); 
+  z-index: 0; 
+}
+
+.hero-img-container > * {
+  position: relative;
+  z-index: 1; 
+}
 .hero-img-tint {
-    background-color: #0000000e;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+  background-color: #00000038;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .image-crop {
-  width: 200px;       /* desired visible width */
-  height: 240px;      /* desired visible height */
+  width: 240px; 
+  height: 180px; 
   overflow: hidden;
   position: relative;
-  
 }
+/* @media screen and (max-width: 640px){ 
+  .image-crop {
+    width: 200px;
+    min-height: 240px;
+    object-fit: contain;
+  }  
+} */
 
 .image-crop img {
   position: absolute;
-  top: 0px;         /* shift image upward */
-  left: 0px;        /* shift image to the left */
+}
+.image-crop small {
+  position: absolute;
+  bottom: 0;
+  right: 50;
+}
+section#events {
+  position: relative;
+  background-image: url("../assets/images/brick-wall.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden; 
+}
+
+section#events::before {
+  content: "";
+  position: absolute;
+  inset: 0; 
+  background-color: rgba(0, 0, 0, 0.82); 
+  z-index: 0; 
+}
+
+section#events > * {
+  position: relative;
+  z-index: 1; 
 }
