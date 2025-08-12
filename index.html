@@ -20,7 +20,7 @@
   </head>
   <body>
     <div id="app"></div>
-    <div class="hero-img-container h-[55vh] md:h-[70vh] xl:h-[80vh]">
+    <section class="hero-img-container h-[55vh] md:h-[70vh] xl:h-[95vh]">
       <div class="hero-img-tint"></div>
       <div class="flex w-full lg:p-5">
         <div class="w-[80px] md:w-[90px] p-2">
@@ -29,21 +29,21 @@
           <!-- <strong class="text-sky-400 text-xl lg:text- pt-5 pl-5">DJ <br/> I-Slice</strong> -->
           <nav class="flex md:w-[750px] text-sm ml-auto w-2/3 p-5 justify-around text-white">
               <div>Services</div>
-              <div>About</div>
+              <div>Events</div>
               <div>Contact</div>
           </nav>
       </div>
-      <div class="bottom-1/3 right-1/2 md:right-1/4 w-[180px] absolute">
+      <div class="bottom-1/3 right-1/2 md:right-1/4 w-180 md:w-[250px] absolute">
       <div class="text-white text-left font-bold text-4xl lg:text-5xl mb-6">DJ I-SLICE</div> 
-      <button class="text-white border-[3.5px] px-8 py-2 rounded-[4px] p-1 lg:w-[180px]">Book Me</button>
+      <button class="text-white px-8 py-3 rounded-[4px] lg:w-[180px]">Book Me</button>
       </div>
       <div class="w-full bottom-0 absolute bg-opacity-40 z-10 py-1 text-center lg:text-left lg:pl-8 text-sm text-white tracking-wider">
         <strong>RINGO UNLIMITED PRODUCTIONS LLC</strong>
       </div>
-    </div>
+    </section>
 
-    <div class="about-me-container text">
-      <div class="px-5 py-10 md:py-20 max-w-[920px] text-center md:text-lg w-4/5 mx-auto">
+    <section id="about-me">
+      <div class="px-5 py-10 md:py-20 xl:py-32 max-w-[920px] text-center md:text-lg w-4/5 mx-auto">
         <h2 class="text-2xl font-bold md:text-3xl xl:text-5xl my-5">Where Independent Artists Come Together</h2>
         <div class="bg-sky-400 h-3 w-1/3 mx-auto xl:my-10"></div>
         <p class="my-5 xl:text-xl">
@@ -62,65 +62,62 @@
           Delectus expedita et distinctio voluptatibus quae temporibus!
         </p>
       </div>
-    </div>
+    </section>
 
-      <section id="events" class="px-5 py-10 md:py-20 text-center md:text-lg w-full">
-        <div class="events-bg-img-tint"></div>
-        <h2 class="text-white text-2xl font-bold md:text-3xl xl:text-5xl my-5">Come checkout our events</h2>
-        <div class="bg-white h-3 w-1/3 mx-auto xl:my-10"></div>
-        <div class="max-w-[360px] mx-auto my-5">
-          <img src="/assets/images/Events-No-Second-Place.jpg">
-        </div>
-      </section>
+    <section id="events" class="px-5 py-10 md:py-20 xl:py-32 text-center md:text-lg w-full">
+      <div class="events-bg-img-tint"></div>
+      <h2 class="text-white text-2xl font-bold md:text-3xl xl:text-5xl my-5">Coming Up Events</h2>
+      <div class="bg-white h-3 w-1/3 mx-auto xl:my-10"></div>
+      <div class="max-w-[250px] md:max-w-[360px] mx-auto my-5">
+        <img src="/assets/images/Events-No-Second-Place.jpg">
+      </div>
+    </section>
 
     <section id="services" class="px-5 py-10 md:py-20 max-w-[920px] text-center md:text-lg w-4/5 mx-auto">
-       <h2 class="text-2xl font-bold md:text-3xl xl:text-5xl my-5 text-center">Services</h2>
-       <div class="bg-sky-400 h-3 w-1/3 mx-auto xl:my-10"></div>
-      <!-- <ul class="my-5">
-        <li class="">Music Production</li>
-        <li class="">Music Publishing</li>
-        <li class="">Event Production</li>
-        <li class="">Artist Development</li>
-      </ul> -->
+      <h2 class="text-2xl font-bold md:text-3xl xl:text-5xl my-5 text-center">Our Services</h2>
+      <div class="bg-sky-400 h-3 w-1/3 mx-auto xl:my-10"></div>
 
-      <div class="flex flex-wrap max-w-[380px] md:max-w-[750px] my-5 md:my-16 m-auto">
-        <div class="image-crop w-full md:w-1/2 text-white p-1">
+      <div class="flex flex-wrap max-w-[380px] md:max-w-[750px] my-5 md:my-16 m-auto text-xl font-[Russo One]">
+        <div class="image-crop w-full md:w-1/2 p-1">
           <img src="assets/images/services/3x2/Artist-Development.jpg" alt="Artist singing to microphone" />
-          <small>Artist Development</small>
+          <small class="text-white absolute top-8 left-3 w-2/3 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</small>
+          <small class="text-white font-bold">Artist Development</small>
           <div class="events-bg-img-tint"></div>
         </div>
-
+ 
         <div class="image-crop w-full md:w-1/2 text-white p-1">
           <img src="assets/images/services/3x2/Event-Production.jpg" alt="Two dancers at an event" />
-          <small>Event Production</small>
+          <small class="text-white font-bold">Event Production</small>
         </div>
 
         <div class="image-crop w-full md:w-1/2 text-black p-1">
           <img src="assets/images/services/3x2/Publishing.jpg" alt="Sigining paperwork" />
-        <small>Publishing</small>
+          <small class="text-black font-bold">Publishing</small>
         </div>
 
         <div class="image-crop w-full md:w-1/2 text-white p-1">
           <img src="assets/images/services/3x2/Music-Studio.jpg" alt="Music producer in studio" />
-          <small>Music Studio</small>
+          <small class="text-white font-bold">Music Studio</small>
         </div>
       </div>
     </section>      
 
     <div class="bg-black h-[2px] w-1/2 max-w-[750px] mx-auto xl:my-10"></div>
 
+    <footer>
      <section class="bg-custom-snow-white footer px-5 py-10 md:py-20 max-w-[920px] md:text-lg w-4/5 mx-auto">
        <h2 class="text-2xl font-bold md:text-3xl xl:text-5xl my-5 text-center">Contact US</h2>
        <div class="bg-black h-3 w-1/3 mx-auto xl:my-10"></div>
-       <ul class="w-[150px] my-8 mx-auto">
-        <li> <i class="fa-solid fa-envelope"></i> Email </li>
-        <li> <i class="fa-brands fa-youtube"></i> YouTube</li>
-        <li> <i class="fa-brands fa-instagram"></i> Instagram</li>
-        <li> <i class="fa-brands fa-tiktok"></i> Tik Tok</li>
-        <li> <i class="fa-brands fa-facebook"></i> Facebook</li>
-        <li> <i class="fa-brands fa-hashtag"></i> Phone Number</li>
-       </ul> 
+        <ul class="w-[150px] my-8 mx-auto">
+          <li> <i class="fa-solid fa-envelope"></i> Email </li>
+          <li> <i class="fa-brands fa-youtube"></i> YouTube</li>
+          <li> <i class="fa-brands fa-instagram"></i> Instagram</li>
+          <li> <i class="fa-brands fa-tiktok"></i> Tik Tok</li>
+          <li> <i class="fa-brands fa-facebook"></i> Facebook</li>
+          <li> <i class="fa-brands fa-hashtag"></i> Phone Number</li>
+        </ul> 
       </section>
+    </footer>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
