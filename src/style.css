@@ -48,7 +48,6 @@ strong {
 
 .image-crop {
   width: 240px; 
-  height: 180px; 
   overflow: hidden;
   position: relative;
 }
