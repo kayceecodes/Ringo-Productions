@@ -27,7 +27,7 @@
             <img src="assets/icons/Ringo_Frog_Icon.png" />
           </div>
             <!-- <strong class="text-sky-400 text-xl lg:text- pt-5 pl-5">DJ <br/> I-Slice</strong> -->
-            <nav class="flex md:w-[750px] text-sm ml-auto w-2/3 p-5 justify-around text-white">
+            <nav class="flex md:w-[750px] text-sm lg:text-xl ml-auto w-2/3 p-5 justify-around text-white">
                 <div id="scrollServices">Services</div>
                 <div id="scrollEvents">Events</div>
                 <div id="scrollContacts">Contacts</div>
@@ -48,15 +48,15 @@
           <h2 class="text-2xl font-bold md:text-3xl xl:text-5xl my-5">Where Independent Artists Come Together</h2>
           <div class="bg-sky-400 h-3 w-1/3 mx-auto xl:my-10"></div>
 
-          <p class="my-5 xl:text-xl">
+          <p class="my-5 xl:text-2xl">
             Ringo Unlimited Productions LLC is all about bringing you the best in entertainment. 
             We’ve got in-house services ready to cover whatever you need, and we’re thankful you’re a star in our universe.
           </p> 
-          <p class="my-5 xl:text-xl">
+          <p class="my-5 xl:text-2xl">
           From just an idea to a full plan, we make it happen. I might not know everything like everyone else,
           but I do know business—and this is business first, built under an umbrella that can cover everybody. 
           </p>
-          <p class="my-5 xl:text-xl">
+          <p class="my-5 xl:text-2xl">
             We’ve got photographers, web designers, chefs, caterers, bakers, and merch sellers who bring their own lines alongside mine at shows.
             Plus, top-notch security to keep my partners and talent safe.
           </p>
@@ -91,7 +91,7 @@
         <h2 class="text-2xl font-bold md:text-3xl xl:text-5xl my-5 text-center">Our Services</h2>
         <div class="bg-sky-400 h-3 w-1/3 mx-auto xl:my-10"></div>
         
-        <div class="text-black w-4/5 mx-auto leading-8">
+        <div class="text-black w-4/5 my-5 mx-auto text-xl lg:text-2xl">
           Our company is built to support creativity and bring visions to life. 
           We offer a range of services including artist development, publishing support, event planning, and access to a professional music studio.
           Whether it’s guiding an artist’s growth, helping music reach the right audience, planning unforgettable events, 
@@ -133,11 +133,11 @@
           <h2 class="text-2xl font-bold md:text-3xl xl:text-5xl my-5 text-center">Contact Me</h2>
           <div class="bg-black h-3 w-1/3 mx-auto xl:my-10 max-w-[300px]"></div>
           <ul class="w-[150px] my-8 mx-auto">
-            <li> <i class="fa-solid fa-envelope"></i> Email </li>
-            <li> <i class="fa-brands fa-youtube"></i> DJI-Slice</li>
-            <li> <i class="fa-brands fa-instagram"></i> dj_i_slice</li>
-            <li> <i class="fa-brands fa-tiktok"></i> djislice</li>
-            <li> <i class="fa-brands fa-facebook"></i> DJ I Slice</li>
+            <li><a href=""> <i class="fa-solid fa-envelope"></i> Email</li>
+            <li><a href="https://www.youtube.com/@DjI-Slice"><i class="fa-brands fa-youtube"></i> DJI-Slice</a> </li>
+            <li><a href=""> <i class="fa-brands fa-instagram"></i> dj_i_slice</li>
+            <li><a href="https://www.tiktok.com/@djislice"><i class="fa-brands fa-tiktok"></i> djislice</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=61575866942062"><i class="fa-brands fa-facebook"></i> DJ I Slice</a></li>
           </ul> 
         </section>
 
@@ -146,37 +146,6 @@
         </div>
       </footer>
     <script type="module" src="/src/main.js">
-      import { gsap } from 'gsap';
-      import { ScrollTrigger } from 'gsap/ScrollTrigger'; // If using ScrollTrigger for scroll-based animations
-
-      gsap.registerPlugin(ScrollTrigger);
-
-      const eventsScroll = document.getElementById('scrollEvents');
-      const eventsSection = document.getElementById('events');
-
-      const servicesScroll = document.getElementById('scrollServices');
-      const servicesSection = document.getElementById('services');
-
-      const contactsScroll = document.getElementById('scrollContacts');
-      const contactsSection = document.getElementById('contacts');
-
-      eventsScroll.addEventListener('click', () => {
-          console.log("Top Position: ", eventsScroll.getBoundingClientRect().top );
-          console.log("Bottom Position: ", eventsScroll.getBoundingClientRect().bottom );
-          gsap.to(window, { duration: 1, scrollTo: { bottom: eventsSection.getBoundingClientRect().bottom, behavior: smooth }});
-          // Scroll to the target section
-          //gsap.to(window, { duration: 1, scrollTo: eventsSection });
-      });
-
-      servicesScroll.addEventListener('click', () => {
-          // Scroll to the target section
-          gsap.to(window, { duration: 1, scrollTo: servicesSection });
-      });
-
-      contactsScroll.addEventListener('click', () => {
-          // Scroll to the target section
-          gsap.to(window, { duration: 1, scrollTo: contactsSection });
-      });
     </script>
   </body>
 </html>
