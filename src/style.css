@@ -2,9 +2,7 @@
 body {
   font-family: "Funnel Sans"
 }
-nav {
-  font-weight: bold;
-}
+
 strong {
   font-family: "Russo One", sans-serif;
   font-weight: 400;
@@ -12,6 +10,7 @@ strong {
   letter-spacing: 1px;
   word-spacing: 3px;
 }
+
 .hero-img-container {
   position: relative;
   background-image: url("../assets/images/DJ-Hero-Img-1.jpg");
@@ -29,12 +28,11 @@ strong {
 }
 
 .hero-img-container > * {
-  position: relative;
   z-index: 1; 
-}
+} 
 
 .hero-img-container button {
-  font-family: "Russo One";
+  /* font-family: "Russo One"; */
   background-color: #00bfff;
 }
 /* .hero-img-tint {
@@ -47,7 +45,6 @@ strong {
 } */
 
 .image-crop {
-  width: 240px; 
   overflow: hidden;
   position: relative;
 }
@@ -64,15 +61,15 @@ strong {
 }
 .image-crop small {
   position: absolute;
-  bottom: 0;
-  right: 50;
+  bottom: 15px;
+  right: 50px;
 }
-@media screen and (min-width: 1280px)
+/* @media screen and (min-width: 1280px)
 {
   .image-crop {
     height: 250px;
   } 
-}
+} */
 section#events {
   position: relative;
   background-image: url("../assets/images/black-brick-wall-NordWood-Themes.jpg");
