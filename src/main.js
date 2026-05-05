@@ -5,6 +5,8 @@ import viteLogo from '/vite.svg'
 import { gsap } from 'gsap';
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin'; // If using ScrollTrigger for scroll-based animations
 
+import './livestream.js';
+
 gsap.registerPlugin(ScrollToPlugin);
 
 const servicesScrollBtn = document.getElementById('scrollServices');
