@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/disc-icon.svg" />
     <link rel="stylesheet" href="./src/style.css" />
     <link
       rel="stylesheet"
@@ -24,20 +24,20 @@
         <div class="hero-img-tint"></div>
         <div class="flex relative w-full lg:p-5">
           <div class="w-[80px] md:w-[100px] lg:w-[120px] p-2">
-            <img src="assets/icons/RingoIcon4.png" />
+            <img src="assets/icons/rup-icon.png" />
           </div>
             <!-- <strong class="text-sky-400 text-xl lg:text- pt-5 pl-5">DJ <br/> I-Slice</strong> -->
-            <nav class="flex md:w-[750px] text-sm lg:text-xl ml-auto w-2/3 p-5 justify-around text-white">
-                <div id="scrollServices">Services</div>
-                <div id="scrollLivestream">Live</div>
-                <div id="scrollEvents">Events</div>
-                <div id="scrollContacts">Contacts</div>
+            <nav class="flex align-top md:w-[750px] text-sm lg:text-xl ml-auto w-2/3 p-5 justify-around text-white">
+                <div id="scrollServices" class="navlink">Services</div>
+                <div id="scrollLivestream" class="navlink">Live</div>
+                <div id="scrollEvents" class="navlink">Events</div>
+                <div id="scrollContacts" class="navlink">Contacts</div>
             </nav>
         </div>
         <div class="bottom-1/3 right-1/2 md:right-1/4 w-180 md:w-[250px] absolute">
           <div class="text-white text-left font-bold text-4xl lg:text-5xl">DJ I-SLICE</div> 
           <div class="text-white mb-4 text-xl">Unleash The Beats</div>
-          <button class="text-white px-8 py-3 rounded-[7px] lg:w-[h-[180px]]"><strong><a href="https://calendar.app.google/hTi3U9Ffkzqw7vzN9" target=”_blank”>BOOK ME</a></strong></button>
+          <button class="bg-sky-400 hover:bg-sky-600 hover:opacity-85 duration-200 transition ease-in-out lg:text-lg text-white px-8 py-3 lg:px-14 rounded-[7px] lg:w-[h-[180px]]"><strong><a href="https://calendar.app.google/hTi3U9Ffkzqw7vzN9" target=”_blank”>BOOK ME</a></strong></button>
         </div>
         <div class="w-full bottom-0 absolute bg-opacity-40 z-10 py-1 text-center lg:text-left lg:pl-8 text-sm text-white tracking-wider">
           <strong>RINGO UNLIMITED PRODUCTIONS LLC</strong>
@@ -79,22 +79,27 @@
         <h2 class="text-white text-2xl font-bold md:text-3xl xl:text-5xl my-5">Coming Up Events</h2>
         <div class="bg-white h-3 w-1/3 mx-auto xl:my-10 max-w-[300px]"></div>
         <h3 class="text-white text-xl font-bold my-8">No Second Chance <br/>October 3rd 2025</h3>
-        <div class="flex max-w-[300px] lg:max-w-[900px] xl:max-w-[1280px] mx-auto my-5">
-          <div class="px-4">
-            <img src="/assets/images/events/No-Second-Place-05.jpg">
-          </div>
-          <div class="px-4 hidden lg:block">
-            <img src="/assets/images/events/No-Second-Place-02.jpg">
-          </div>
-          <div class="px-4 hidden lg:block">
-          <img src="/assets/images/events/No-Second-Place-01.jpg">
-          </div>
+         <div id="event-images" class="flex max-w-[300px] lg:max-w-[900px] xl:max-w-[1280px] mx-auto my-5">
+          <!-- Images will be injected here -->
         </div>
+        <!-- <div class="flex max-w-[300px] lg:max-w-[900px] xl:max-w-[1280px] mx-auto my-5">
+          <div class="px-4">
+            <img src="https://res.cloudinary.com/dg5gjhi8r/image/upload/ringo-events/event-image-1.jpg">
+          </div>
+          <div class="px-4 hidden lg:block">
+            <img src="https://res.cloudinary.com/dg5gjhi8r/image/upload/ringo-events/event-image-2.jpg">
+          </div>
+          <div class="px-4 hidden lg:block">
+            <img src="https://res.cloudinary.com/dg5gjhi8r/image/upload/ringo-events/event-image-3.jpg">
+          </div>
+        </div> -->
         <div class="mt-8 xl:mt-14">
-          <a href="https://ringo-unlimited-productions-llc.square.site" class="text-white border-white border-4 px-6 py-3 rounded-[22px] lg:w-[250px] lg:my-10">
-            <i class="fa-solid fa-ticket"></i>
-            Get your ticket
-          </a>  
+          <button class="inline-block mt-6 text-white border-white border-2 px-6 py-3 rounded-[22px] lg:text-xl font-semibold">
+            <a href="https://ringo-unlimited-productions-llc.square.site" >
+              <i class="fa-solid fa-ticket"></i>
+              Get your ticket
+            </a>  
+          </button>
         </div>
       </section>
 

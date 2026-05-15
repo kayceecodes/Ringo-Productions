@@ -1,4 +1,6 @@
 @import "@fortawesome/fontawesome-free/css/all.css";
+@import "tailwindcss";
+
 body {
   font-family: "Funnel Sans"
 }
@@ -9,6 +11,35 @@ strong {
   font-style: normal;
   letter-spacing: 1px;
   word-spacing: 3px;
+}
+
+nav div {
+  color: white;
+  transition: color 0.2s ease-in-out, border 0.2s ease-in-out;
+  border-bottom: 3px solid #00000000; 
+  height: fit-content;
+}
+nav div:hover {
+  color: #b0b0b0;
+  border-bottom: 3px solid #55c6ec; 
+}
+
+button {
+  transition: 0.2s color ease-in, 0.2s border-color ease-in;
+}
+
+button:hover {
+  color: #b0b0b0;
+  border-color: #b0b0b0;
+}
+
+button i {
+  transition: 0.2s color ease-in; 
+}
+
+button:hover i {
+ color: #55c6ec;
+
 }
 
 .hero-img-container {
@@ -31,30 +62,10 @@ strong {
   z-index: 1; 
 } 
 
-.hero-img-container button {
-  /* font-family: "Russo One"; */
-  background-color: #00bfff;
-}
-/* .hero-img-tint {
-  background-color: #00000038;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-} */
-
 .image-crop {
   overflow: hidden;
   position: relative;
 }
-/* @media screen and (max-width: 640px){ 
-  .image-crop {
-    width: 200px;
-    min-height: 240px;
-    object-fit: contain;
-  }  
-} */
 
 .image-crop img {
   position: absolute;
@@ -64,12 +75,6 @@ strong {
   bottom: 15px;
   right: 50px;
 }
-/* @media screen and (min-width: 1280px)
-{
-  .image-crop {
-    height: 250px;
-  } 
-} */
 section#events {
   position: relative;
   background-image: url("../assets/images/black-brick-wall-NordWood-Themes.jpg");
@@ -98,6 +103,20 @@ section#services {
 
 footer {
   font-family: "Funnel Sans";
+}
+footer ul {
+  height: max-content;
+}
+footer ul li {
+  height: 30px;
+}
+footer li a {
+  transition: 0.2s color ease, font-size 0.2s ease; 
+}
+
+footer li:hover a {
+  color: #55c6ec;
+  font-size: 20px;
 }
 /*
 Tailwind Media Query Widths

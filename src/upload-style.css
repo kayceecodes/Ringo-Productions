@@ -1,0 +1,58 @@
+      body {
+        font-family: 'Funnel Sans', sans-serif;
+        background-color: #0a0a0a;
+        background-image:
+          radial-gradient(ellipse at 20% 20%, rgba(56, 189, 248, 0.06) 0%, transparent 60%),
+          radial-gradient(ellipse at 80% 80%, rgba(56, 189, 248, 0.04) 0%, transparent 50%);
+      }
+      h1, .label-heading {
+        font-family: 'Russo One', sans-serif;
+      }
+      .slot-card {
+        background: linear-gradient(135deg, #111827 0%, #0f172a 100%);
+        border: 1px solid rgba(56, 189, 248, 0.15);
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+      }
+      .slot-card:hover {
+        border-color: rgba(56, 189, 248, 0.4);
+        box-shadow: 0 0 24px rgba(56, 189, 248, 0.08);
+      }
+      .upload-btn {
+        background: transparent;
+        border: 2px solid #38bdf8;
+        color: #38bdf8;
+        font-family: 'Russo One', sans-serif;
+        letter-spacing: 0.08em;
+        transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+      }
+      .upload-btn:hover {
+        background: #38bdf8;
+        color: #0a0a0a;
+        box-shadow: 0 0 18px rgba(56, 189, 248, 0.35);
+      }
+      .upload-btn:disabled {
+        opacity: 0.4;
+        cursor: not-allowed;
+        pointer-events: none;
+      }
+      .success-badge {
+        animation: fadeInUp 0.4s ease forwards;
+      }
+      @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(8px); }
+        to   { opacity: 1; transform: translateY(0); }
+      }
+      .slot-number {
+        font-family: 'Russo One', sans-serif;
+        font-size: 2.5rem;
+        line-height: 1;
+        color: rgba(56, 189, 248, 0.15);
+        position: absolute;
+        top: 1rem;
+        right: 1.25rem;
+      }
+      .divider {
+        height: 2px;
+        background: linear-gradient(to right, transparent, #38bdf8, transparent);
+        opacity: 0.3;
+      }

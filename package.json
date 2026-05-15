@@ -15,7 +15,8 @@
     "@fortawesome/fontawesome-free": "^7.0.0",
     "@fortawesome/free-brands-svg-icons": "^7.0.0",
     "@fortawesome/free-solid-svg-icons": "^7.0.0",
+    "@tailwindcss/vite": "^4.3.0",
     "gsap": "^3.13.0",
-    "tailwindcss": "^4.1.12"
+    "tailwindcss": "^4.3.0"
   }
 }
