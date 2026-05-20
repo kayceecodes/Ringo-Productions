@@ -1,0 +1,124 @@
+body {
+  font-family: "Funnel Sans"
+}
+
+strong {
+  font-family: "Russo One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+}
+
+nav div {
+  color: white;
+  transition: color 0.2s ease-in-out, border 0.2s ease-in-out;
+  border-bottom: 3px solid #00000000; 
+  height: fit-content;
+}
+nav div:hover {
+  color: #b0b0b0;
+  border-bottom: 3px solid #55c6ec; 
+}
+
+button {
+  transition: 0.2s color ease-in, 0.2s border-color ease-in;
+}
+
+button:hover {
+  color: #b0b0b0;
+  border-color: #b0b0b0;
+}
+
+button i {
+  transition: 0.2s color ease-in; 
+}
+
+button:hover i {
+ color: #55c6ec;
+
+}
+
+.hero-img-container {
+  position: relative;
+  background-image: url("../assets/images/DJ-Hero-Img-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-img-container::before {
+  content: "";
+  position: absolute;
+  inset: 0; 
+  background-color: rgba(0, 0, 0, 0.3); 
+  z-index: 0; 
+}
+
+.hero-img-container > * {
+  z-index: 1; 
+} 
+
+.image-crop {
+  overflow: hidden;
+  position: relative;
+}
+
+.image-crop img {
+  position: absolute;
+}
+.image-crop small {
+  position: absolute;
+  bottom: 15px;
+  right: 50px;
+}
+section#events {
+  position: relative;
+  background-image: url("../assets/images/black-brick-wall-NordWood-Themes.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden; 
+}
+
+section#events::before {
+  content: "";
+  position: absolute;
+  inset: 0; 
+  background-color: rgba(0, 0, 0, 0.55); 
+  z-index: 0; 
+}
+
+section#events > * {
+  position: relative;
+  z-index: 1; 
+}
+
+section#services {
+  font-family: "Funnel Sans";
+}
+
+footer {
+  font-family: "Funnel Sans";
+}
+footer ul {
+  height: max-content;
+}
+footer ul li {
+  height: 30px;
+}
+footer li a {
+  transition: 0.2s color ease, font-size 0.2s ease; 
+}
+
+footer li:hover a {
+  color: #55c6ec;
+  font-size: 20px;
+}
+/*
+Tailwind Media Query Widths
+sm 640px 
+md 768px
+lg 1024px
+xl 1280px 
+*/

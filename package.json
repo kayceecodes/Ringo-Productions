@@ -1,22 +1,20 @@
 {
   "name": "ringo-productions",
-  "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "main": "server.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "devDependencies": {
-    "vite": "^7.1.2"
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "build:css": "npx @tailwindcss/cli -i ./public/src/tailwind.css -o ./public/src/output.css --minify"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^7.0.0",
-    "@fortawesome/free-brands-svg-icons": "^7.0.0",
-    "@fortawesome/free-solid-svg-icons": "^7.0.0",
-    "@tailwindcss/vite": "^4.3.0",
-    "gsap": "^3.13.0",
-    "tailwindcss": "^4.3.0"
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "gsap": "^3.13.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.0.0",
+    "tailwindcss": "^4.0.0"
   }
 }
