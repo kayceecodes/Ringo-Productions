@@ -11,18 +11,27 @@ async function checkLiveStream(){
         const CHANNEL_ID = config.youtubeChannelId;
         const API_KEY = config.youtubeApiKey;
 
+        const BASE = "https://www.googleapis.com/youtube/v3";
         //includes live videos
-        const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${CHANNEL_ID}&eventType=live&type=video&key=${API_KEY}`;
+        // const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${CHANNEL_ID}&eventType=live&type=video&key=${API_KEY}`;
         //difference: eventype:live is removed, order changed to most recent, max # of videos is now 6
         //const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${CHANNEL_ID}&type=video&order=date&maxResults=6&key=${API_KEY}`;
 
-        const response = await fetch(url);
-      
-        if (!response.ok) {
-            console.log('Response status: ', response.status, response.statusText)
-        }
-        const data = await response.json();
-     
+        const liveResponse = await fetch(BASE + `/search?part=snippet&channelId=${CHANNEL_ID}&eventType=live&type=video&key=${API_KEY}`);
+        const videosResponse = await fetch(BASE + `/search?part=snippet&channelId=${CHANNEL_ID}&eventType=completed&type=video&key=${API_KEY}`);
+
+        let data = {};
+        
+        if (liveResponse.ok)
+            data = await liveResponse.json();
+          else if (videosResponse.ok && !liveResponse.ok) {
+            data = await videosResponse.json();
+            console.log('Response status: ', liveResponse.status, liveResponse.statusText)
+          }
+          else {
+            console.log('Response status: ', videosResponse.status, videosResponse.statusText)
+          }
+
         if (data.error) {
             console.error('YouTube API Error:', data.error.message);
             statusText.textContext = '';
@@ -34,9 +43,11 @@ async function checkLiveStream(){
     if (liveVideos && liveVideos.length > 0) {
       const videoId = liveVideos[0].id.videoId;
       const streamTitle = liveVideos[0].snippet.title;
+      const liveStatus = liveVideos[0].snippet.liveBroadCastContent ? "🔴 LIVE NOW" : "Past Livestream";
 
       container.innerHTML = `
-        <p class="text-sky-400 font-bold text-lg mb-4">🔴 LIVE NOW: ${streamTitle}</p>
+        <p class="text-sky-400 font-bold text-lg mb-4">
+        ${liveStatus} ${streamTitle}</p>
         <div class="relative w-full" style="padding-top: 56.25%;">
           <iframe
             class="absolute top-0 left-0 w-full h-full rounded-lg"
