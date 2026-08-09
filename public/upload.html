@@ -22,7 +22,7 @@
       <p class="text-gray-400 text-sm md:text-base leading-relaxed">
         Upload up to <span class="text-sky-400 font-semibold">3 images</span> for the Events section.
         <br>Only the 3 most recent uploaded images will display.
-        <br>This uploader does not overwrite, it only adds images to Cloudinary's list of images.
+        <!-- <br>This uploader does not overwrite, it only adds images to Cloudinary's list of images. -->
         <br>Please upload <span class="text-white font-semibold">images only</span> (JPG, PNG, or WEBP).
       </p>
     </div>
@@ -110,11 +110,13 @@ function openWidget(slotNumber) {
       folder: 'events',
       tags: ['events'],
       sources: ['local', 'camera'],
-      multiple: true,
+      multiple: false,
       resourceType: 'image',
       clientAllowedFormats: ['jpg', 'jpeg', 'png', 'webp'],
       maxFileSize: 10000000,
       showPoweredBy: false,
+      public_id: 'event-image' + slotNumber,
+      overwrite: true,
             styles: {
               palette: {
                 window: '#0f172a',

@@ -10,6 +10,14 @@ strong {
   word-spacing: 3px;
 }
 
+.socials-navbar {
+  display: hidden;
+  justify-content: space-between;
+}
+.socials-navbar > * {
+  flex: 1;
+  display: contents;
+}
 nav div {
   color: white;
   transition: color 0.2s ease-in-out, border 0.2s ease-in-out;
@@ -107,14 +115,85 @@ footer ul {
 footer ul li {
   height: 30px;
 }
-footer li a {
+footer li a * {
   transition: 0.2s color ease, font-size 0.2s ease; 
 }
 
-footer li:hover a {
+footer li:hover a * {
   color: #55c6ec;
   font-size: 20px;
 }
+/* Socials */
+.google-icon {
+  margin-right: 4px;
+}
+.google-gradient {
+  background:
+    linear-gradient(#4285f4, #4285f4) 54% 51% / 22% 28% no-repeat,
+    conic-gradient(
+      from 0deg at 50% 50%,
+      #EA4335 0deg,
+      #EA4335 31deg,
+      #4285f4 61deg,
+      #4285f4 127deg,
+      #34A853 157deg,
+      #34A853 211deg,
+      #FBBC05 241deg,
+      #FBBC05 277deg,
+      #EA4335 307deg,
+      #EA4335 360deg
+    );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.instagram-icon {
+  margin-right: 4px;
+}
+.instagram-gradient {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tiktok-icon {
+  position: relative;
+  display: inline-block;
+  margin-right: 4px;
+}
+.tiktok-icon .tiktok-cyan { 
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  color: #25F4EE; 
+}
+.tiktok-icon .tiktok-magenta { 
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  color: #FE2C55; 
+}
+.tiktok-icon .tiktok-dark { 
+  position: relative;
+  color: #010101; 
+}
+
+.facebook-icon {
+ margin-right: 4px;
+}
+.facebook-blue { 
+  color: #1877F2; 
+}
+
+.youtube-icon {
+ margin-right: 4px;
+}
+.youtube-red {
+  color: #FE2C55
+}
+
 /*
 Tailwind Media Query Widths
 sm 640px 

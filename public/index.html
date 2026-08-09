@@ -27,14 +27,56 @@
             <img src="assets/icons/rup-icon.png" />
           </div>
             <!-- <strong class="text-sky-400 text-xl lg:text- pt-5 pl-5">DJ <br/> I-Slice</strong> -->
-            <nav class="flex align-top md:w-[750px] text-sm lg:text-xl ml-auto w-2/3 p-5 justify-around text-white">
+          <div class="flex flex-col items-end ml-auto max-w-[750px] pt-2 pr-4 xl:pt-3 xl:pr-5">
+            <button
+              id="menu-btn"
+              class="sm:hidden flex flex-col items-end gap-1.5 p-2 cursor-pointer"
+              aria-label="Open menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <span class="block h-1 w-7 bg-white rounded-sm"></span>
+              <span class="block h-1 w-7 bg-white rounded-sm"></span>
+              <span class="block h-1 w-3.5 bg-white rounded-sm"></span>
+            </button>
+            <ul class="hidden sm:flex text-white text-xs xl:text-sm socials-navbar w-[150px] lg:w-[200px]">
+                <li>
+                    <a href="">
+                        <span class="google-icon"><i class="fa-brands fa-google"></i></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/@DjI-Slice">
+                      <span class="youtube-icon"><i class="fa-brands fa-youtube"></i></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                      <span class="instagram-icon"><i class="fa-brands fa-instagram"></i></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.tiktok.com/@djislice">
+                        <span class="tiktok-icon">
+                            <i class="fab fa-tiktok"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/profile.php?id=61575866942062">
+                        <span class="facebook-icon"><i class="fa-brands fa-facebook"></i></span> 
+                    </a>
+                </li>
+            </ul>
+            <nav class="hidden sm:flex align-top w-[300px] md:w-[] lg:w-[450px] xl:w-[750px] text-md lg:text-xl mt-5 justify-between text-white">
                 <div id="scrollServices" class="navlink">Services</div>
                 <div id="scrollLivestream" class="navlink">Live</div>
                 <div id="scrollEvents" class="navlink">Events</div>
                 <div id="scrollContacts" class="navlink">Contacts</div>
             </nav>
+          </div>
         </div>
-        <div class="bottom-1/3 right-1/2 md:right-1/4 w-180 md:w-[250px] absolute">
+        <div class="bottom-1/3 right-1/2 md:right-1/4 w-[180px] md:w-[250px] absolute">
           <div class="text-white text-left font-bold text-4xl lg:text-5xl">DJ I-SLICE</div> 
           <div class="text-white mb-4 text-xl">Unleash The Beats</div>
           <button class="bg-sky-400 hover:bg-sky-600 hover:opacity-85 duration-200 transition ease-in-out lg:text-lg text-white px-8 py-3 lg:px-14 rounded-[7px] lg:w-[h-[180px]]"><strong><a href="https://calendar.app.google/hTi3U9Ffkzqw7vzN9" target=”_blank”>BOOK ME</a></strong></button>
@@ -145,22 +187,78 @@
       <div class="bg-black h-[2px] w-1/2 max-w-[750px] mx-auto"></div>
 
       <footer>
-        <section id="contacts" class="bg-custom-snow-white footer px-5 py-10 md:py-20 max-w-[920px] md:text-lg w-4/5 mx-auto">
-          <h2 class="text-2xl font-bold md:text-3xl xl:text-5xl my-5 text-center">Contact Me</h2>
-          <div class="bg-black h-3 w-1/3 mx-auto xl:my-10 max-w-[300px]"></div>
-          <ul class="w-[150px] my-8 mx-auto">
-            <li><a href=""> <i class="fa-solid fa-envelope"></i> Email</li>
-            <li><a href="https://www.youtube.com/@DjI-Slice"><i class="fa-brands fa-youtube"></i> DJI-Slice</a> </li>
-            <li><a href=""> <i class="fa-brands fa-instagram"></i> dj_i_slice</li>
-            <li><a href="https://www.tiktok.com/@djislice"><i class="fa-brands fa-tiktok"></i> djislice</a></li>
-            <li><a href="https://www.facebook.com/profile.php?id=61575866942062"><i class="fa-brands fa-facebook"></i> DJ I Slice</a></li>
-          </ul> 
+        <section id="contacts" class="bg-custom-snow-white footer px-5 py-10 md:py-20 max-w-[920px] w-4/5 mx-auto">
+            <h2 class="text-2xl font-bold md:text-3xl xl:text-5xl my-5 text-center">Contact Me</h2>
+            <div class="bg-black h-3 w-1/3 mx-auto xl:my-10 max-w-[300px]"></div>
+            <ul class="w-[100px] my-8 mx-auto">
+                <li>
+                    <a href="">
+                        <span class="google-icon"><i class="fa-brands fa-google google-gradient"></i></span>
+                        <span>Gmail</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/@DjI-Slice">
+                      <span class="youtube-icon"><i class="fa-brands fa-youtube youtube-red"></i></span>
+                      <span>DJI-Slice</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                      <span class="instagram-icon"><i class="fa-brands fa-instagram instagram-gradient"></i></span>
+                      <span>dj_i_slice</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.tiktok.com/@djislice">
+                        <span class="tiktok-icon">
+                            <i class="fab fa-tiktok tiktok-cyan"></i>
+                            <i class="fab fa-tiktok tiktok-magenta"></i>
+                            <i class="fab fa-tiktok tiktok-dark"></i>
+                        </span>
+                        <span>djislicekj</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/profile.php?id=61575866942062">
+                        <span class="facebook-icon"><i class="fa-brands fa-facebook facebook-blue"></i></span> 
+                        <span>DJ I Slice</span>
+                    </a>
+                </li>
+            </ul> 
         </section>
 
         <div class="w-full bg-black py-1 text-center text-sm text-white tracking-wider">
           <strong>DJ I-SLICE - RINGO UNLIMITED PRODUCTIONS, LLC</strong>
         </div>
       </footer>
+      <!-- Mobile menu drawer -->
+      <nav
+        id="mobile-menu"
+        class="sm:hidden fixed top-0 right-0 h-full w-64 bg-white z-50 translate-x-full transition-transform duration-300 ease-in-out shadow-2xl flex flex-col"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Site menu"
+        aria-hidden="true"
+      >
+        <button id="menu-close" class="absolute top-4 right-4 text-charcoal text-2xl cursor-pointer" aria-label="Close menu">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <ul class="flex flex-1 flex-col gap-8 p-8 pt-20 text-charcoal text-lg font-semibold">
+          <li><a href="#services" class="mobile-link" data-target="#services">Services</a></li>
+          <li><a href="#livestream" class="mobile-link" data-target="#livestream">Live</a></li>
+          <li><a href="#events" class="mobile-link" data-target="#events">Events</a></li>
+          <li><a href="#contacts" class="mobile-link" data-target="#contacts">Contacts</a></li>
+        </ul>
+        <ul class="flex items-center justify-around px-8 pb-10 text-charcoal text-2xl">
+          <li><a href="" aria-label="Google"><i class="fa-brands fa-google"></i></a></li>
+          <li><a href="https://www.youtube.com/@DjI-Slice" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></li>
+          <li><a href="" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="https://www.tiktok.com/@djislice" aria-label="TikTok"><i class="fab fa-tiktok"></i></a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=61575866942062" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+        </ul>
+      </nav>
+      <div id="menu-backdrop" class="sm:hidden fixed inset-0 bg-black/60 opacity-0 pointer-events-none transition-opacity duration-300 z-40"></div>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollToPlugin.min.js"></script>
       <script type="module" src="/src/main.js"></script>

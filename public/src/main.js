@@ -27,7 +27,7 @@ servicesScrollBtn.addEventListener('click', () => {
 livestreamScrollBtn.addEventListener('click', () => {
     gsap.to(window, {
         duration: 0.7,
-        scrollTo: '#events'
+        scrollTo: '#livestream'
     });
 });
 
@@ -80,3 +80,51 @@ async function loadEventImages() {
 }
 
 loadEventImages();
+
+const menuBtn = document.getElementById('menu-btn');
+const menuClose = document.getElementById('menu-close');
+const mobileMenu = document.getElementById('mobile-menu');
+const menuBackdrop = document.getElementById('menu-backdrop');
+
+function smoothScrollTo(target) {
+    gsap.to(window, {
+        duration: 0.7,
+        scrollTo: target
+    });
+}
+
+function openMenu() {
+    mobileMenu.classList.remove('translate-x-full');
+    mobileMenu.classList.add('translate-x-0');
+    menuBackdrop.classList.remove('opacity-0', 'pointer-events-none');
+    menuBackdrop.classList.add('opacity-100', 'pointer-events-auto');
+    menuBtn.setAttribute('aria-expanded', 'true');
+    mobileMenu.setAttribute('aria-hidden', 'false');
+}
+
+function closeMenu() {
+    mobileMenu.classList.add('translate-x-full');
+    mobileMenu.classList.remove('translate-x-0');
+    menuBackdrop.classList.add('opacity-0', 'pointer-events-none');
+    menuBackdrop.classList.remove('opacity-100', 'pointer-events-auto');
+    menuBtn.setAttribute('aria-expanded', 'false');
+    mobileMenu.setAttribute('aria-hidden', 'true');
+}
+
+menuBtn.addEventListener('click', openMenu);
+menuClose.addEventListener('click', closeMenu);
+menuBackdrop.addEventListener('click', closeMenu);
+
+window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        closeMenu();
+    }
+});
+
+document.querySelectorAll('.mobile-link').forEach((link) => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        closeMenu();
+        smoothScrollTo(link.dataset.target);
+    });
+});

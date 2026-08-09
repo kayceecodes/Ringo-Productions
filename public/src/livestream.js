@@ -11,7 +11,9 @@ async function checkLiveStream(){
         const CHANNEL_ID = config.youtubeChannelId;
         const API_KEY = config.youtubeApiKey;
 
-        const BASE = "https://www.googleapis.com/youtube/v3";
+        const BASE = "PLACEHOLDER_TO_AVOID_TOO_MANY_REQUESTS"
+        // const BASE = "https://www.googleapis.com/youtube/v3";
+
         //includes live videos
         // const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${CHANNEL_ID}&eventType=live&type=video&key=${API_KEY}`;
         //difference: eventype:live is removed, order changed to most recent, max # of videos is now 6
